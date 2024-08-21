@@ -11,15 +11,12 @@ const menuAberto = ref(false);
     <header>
       <div class="header--logo">
         <img src="@/assets/logoFakeStore.png" alt="Logo" />
-        <h1>FakeStore</h1>
+        <h1>Bio</h1>
       </div>
       <nav>
-        <ul :class="menuAberto ? 'menu' : ''">
+        <ul :class="menuAberto ? 'menu' : 'mobile'">
           <li>Home</li>
-          <li>Eletrônicos</li>
-          <li>Jóias</li>
-          <li>Masculino</li>
-          <li>Feminino</li>
+          <li>Plus</li>
         </ul>
       </nav>
       <div class="header--icons">
@@ -72,7 +69,7 @@ nav li {
     display: block;
   }
 
-  nav .menu {
+  nav .mobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -83,7 +80,7 @@ nav li {
     text-align: right;
     padding: 10px 16px;
   }
-  nav .menu li {
+  nav .mobile li {
     display: block;
     margin-top: 12px;
   }

@@ -12,15 +12,12 @@
   <header>
     <div class="header--logo">
       <img src="@/assets/logoFakeStore.png" alt="Logo" />
-      <h1>FakeStore - LG</h1>
+      <h1>Bio</h1>
     </div>
     <nav>
       <ul :class="menuAberto ? 'menu' : ''">
         <li>Home</li>
-        <li>Eletrônicos</li>
-        <li>Jóias</li>
-        <li>Masculino</li>
-        <li>Feminino</li>
+        <li>Plus</li>
       </ul>
     </nav>
     <div class="header--icons">

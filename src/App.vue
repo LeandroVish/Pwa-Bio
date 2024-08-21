@@ -10,7 +10,7 @@ const { menu } = useMonitor();
       <router-view />
     </main>
     <footer>
-      <p>Copyright &copy; 2024</p>
+      <p>LeandroVish &copy; 2024</p>
     </footer>
   </div>
 </template>
