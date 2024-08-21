@@ -1,8 +1,11 @@
 <script setup>
+import ListagemProdutos from '@/components/ListagemProdutos.vue';
+import RodapeMobile from '@/components/RodapeMobile.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <ListagemProdutos />
+  <RodapeMobile />
 </template>
+
+<style scoped></style>
