@@ -1,17 +1,8 @@
 <script setup>
-import { ref, onMounted } from 'vue';
 import { useScreen } from '@/composables/screen';
-import axios from 'axios';
 
-const { browserWidth, deviceWidth, isMobile } = useScreen();
-const produtos = ref([]);
+const { isMobile } = useScreen();
 
-onMounted(async () => {
-  const response = await axios.get('https://fakestoreapi.com/products');
-  produtos.value = response.data;
-});
-
-const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
 </script>
 
 <template>
@@ -23,33 +14,103 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
     <div class="container">
       <div class="card">
         <h1 class="card--title">Livia</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Brian</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Rafael</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Duda</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Leandro</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Maria</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Isabelly</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Lucas</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Diego</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
       <div class="card">
         <h1 class="card--title">Miguel</h1>
+        <li class="topic">Data de Aniversário:</li>
+        <li class="topic">Cor Favorita:</li>
+        <li class="topic">Comida Favorita:</li>
+        <li class="topic">Bebida Favorita:</li>
+        <li class="topic">Filme Favorito:</li>
+        <li class="topic">Desenho Favorito:</li>
+        <li class="topic">Banda/Cantor(a):</li>
       </div>
     </div>
   </div>
@@ -86,10 +147,11 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
   width: 15rem;
   height: 25rem;
   background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
-  margin: auto;
+  box-shadow: 1 5px 25px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  margin: 25px auto;
   overflow: hidden;
+  background-color: rgb(114, 46, 177);
 }
 .card--avatar {
   width: 100%;
