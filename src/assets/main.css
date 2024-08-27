@@ -5,11 +5,16 @@
   box-sizing: border-box;
 }
 body {
-  background: #fdfdfd;
+  background: transparent;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
 }
 h1 {
-  color: #e74c3c;
+  color: rgb(88 199 250 / 100%);
   margin-bottom: 0.5rem;
+}
+header {
+  color: rgb(88 199 250 / 100%);
+  background-color: transparent;
+  background: transparent;
 }
